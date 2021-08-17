@@ -5,7 +5,7 @@ import "google/protobuf/any.proto";
 import "atlas/resource/v1/resource.proto";
 
 package grpcserver;
-option go_package = "warlock/grpcserver";
+option go_package = "swiftlock/grpcserver";
 
 message Cipher {
   option (gorm.opts).ormable = true;
@@ -20,6 +20,6 @@ message Cipher {
 }
 message GetCiphersResponse { repeated Cipher ciphers = 1; }
 
-service Warlock {
+service SwiftLock {
   rpc GetCiphers(google.protobuf.Empty) returns (GetCiphersResponse) {}
 }
