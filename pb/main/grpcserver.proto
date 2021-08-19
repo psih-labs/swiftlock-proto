@@ -2,6 +2,8 @@ syntax = "proto3";
 
 import "google/protobuf/empty.proto";
 import "google/protobuf/any.proto";
+import "google/protobuf/timestamp.proto";
+import "options/gorm.proto";
 import "atlas/resource/v1/resource.proto";
 
 package grpcserver;
