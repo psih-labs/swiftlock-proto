@@ -1,6 +1,9 @@
 default_lang:
   - name: go
     args: "plugins=grpc,paths=source_relative:"
+    imports:
+      - "/go/src/github.com/infobloxopen/protoc-gen-gorm/third_party/proto/"
+      - "/go/src/github.com/infobloxopen/protoc-gen-gorm/proto/"
   - name: gorm
     args: "engine=postgres,enums=string,gateway:"
     imports:
