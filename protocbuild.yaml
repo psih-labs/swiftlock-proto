@@ -4,8 +4,4 @@ default_lang:
     imports:
       - "/go/src/github.com/infobloxopen/protoc-gen-gorm/third_party/proto/"
       - "/go/src/github.com/infobloxopen/protoc-gen-gorm/proto/"
-  - name: gorm
-    args: "engine=postgres,enums=string,gateway:"
-    imports:
-      - "/go/src/github.com/infobloxopen/protoc-gen-gorm/third_party/proto/"
-      - "/go/src/github.com/infobloxopen/protoc-gen-gorm/proto/"
+    extra: ' --gorm_out="engine=postgres,enums=string,gateway:"'
