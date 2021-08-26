@@ -10,4 +10,4 @@ services:
       - GIT_HOST=${CI_SERVER_HOST}
       - GIT_TOKEN=${GIT_TOKEN}
     volumes:
-      - ${GITHUB_WORKSPACE}:/workspace
+      - fakestuff/:/workspace
